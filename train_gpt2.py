@@ -1,9 +1,3 @@
-"""GPT-2: arquitetura, dados e treinamento.
-
-Referência: https://github.com/karpathy/build-nanogpt, de Andrej Karpathy.
-Inclui um modelo reduzido para CPU e atenção manual para estudo.
-"""
-
 import argparse
 from contextlib import nullcontext
 from dataclasses import asdict, dataclass
@@ -233,7 +227,6 @@ class GPT(nn.Module):
         return model
 
 
-# -----------------------------------------------------------------------------
 # Dados: IDs GPT-2 -> entradas e alvos deslocados em um token.
 
 def get_encoding():
@@ -327,8 +320,6 @@ class DataLoaderLite:
         self.current_position += self.stride
         return x, y
 
-
-# -----------------------------------------------------------------------------
 # Geração e validação.
 
 @torch.no_grad()

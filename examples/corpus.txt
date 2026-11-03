@@ -1,0 +1,14 @@
+Este é um corpus didático sintético para testar o pipeline de treinamento.
+Um modelo de linguagem recebe tokens e estima a probabilidade do próximo token.
+A atenção causal permite consultar a posição atual e as posições anteriores.
+Os embeddings representam tokens e posições em vetores de números reais.
+Cada bloco combina atenção, normalização, conexões residuais e uma rede MLP.
+Durante o treinamento, a perda compara a previsão com o token que vem depois.
+A retropropagação calcula gradientes e o otimizador atualiza os parâmetros.
+A validação usa um trecho separado para observar o comportamento do modelo.
+Salvar um checkpoint permite retomar pesos, otimizador e posição dos dados.
+Este pequeno texto serve apenas para verificar a execução em um computador comum.
+Treinar com ele não reproduz a qualidade nem a escala do GPT-2 original.
+Texto adicional permite reservar exemplos para a validação sem reutilizar treino.
+A geração acrescenta um token por vez ao contexto e repete o cálculo.
+Os testes verificam formas dos tensores, gradientes e ausência de acesso ao futuro.

@@ -1,0 +1,6 @@
+torch>=2.5,<3
+numpy>=1.26,<3
+tiktoken>=0.8,<1
+transformers>=4.44,<5
+datasets>=3,<5
+pytest>=8,<10

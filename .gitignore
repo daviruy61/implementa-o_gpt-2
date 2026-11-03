@@ -218,3 +218,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Dados tokenizados, pesos e resultados locais de treinamento
+/data/
+/runs/
+/artifacts/
+*.pt
+*.npy
